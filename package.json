@@ -1,0 +1,26 @@
+{
+  "name": "ts-man",
+  "version": "1.0.0",
+  "description": "documentation typescript interactive dans le terminal, pour apprendre typescript à côté des cours",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "bin": {
+    "ts-man": "./src/cli.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "build": "bun run scripts/build-binaries.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.0",
+    "typescript": "^5.6.0"
+  }
+}
